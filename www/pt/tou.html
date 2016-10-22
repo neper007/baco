@@ -1,0 +1,129 @@
+
+<!--http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+<!--        <link rel="stylesheet" href="css/style.css">-->
+        
+        <style>
+            
+            @import url("../css/_base.css");
+            
+            * {
+              margin: 0;
+              padding: 0;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+              height: 100%;
+            }
+            .box {
+/*              height: 200px;*/
+                height: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              /*border: 2px solid tomato;*/
+            }
+            .box div {
+/*                margin: 0 10px;*/
+                margin: 0 10%;
+/*                width: 100px;*/
+                background-color: rgba(204, 204, 204, 0.8);
+                border-radius:5px;
+            }
+            .item1 {
+                height: 80%;
+/*              height: 50px;*/
+/*              background: pink;*/
+                /*border: 2px solid tomato;*/
+                overflow-y: auto;
+                padding: 0 3vw;
+            }
+            .item1 h2 {
+                text-align: center;
+                font-size: 3vw;
+                padding: 3vh;
+            }
+
+            .item1 h3 {
+                /*text-align: center;*/
+                font-size: 1.4vw;
+                margin: 3vh;
+                color: rgba(77, 0, 0, 1);
+            }
+            .item1 p {
+                margin-bottom: 2vh;
+                font-size: 2vw;
+            }
+            /*.item1 button {
+                text-align: center;
+                padding: 3vh;
+            }*/
+            #btn_tou {
+/*                text-align: center;*/
+                display: block;
+                margin: 0 auto;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+/*                border-radius: 5vh;*/
+                padding: 2vh;
+                font-size: 2vw;
+            }
+            .item2 {
+              background: brown;
+              height: 100px;
+            }
+            .item3 {
+              height: 150px;
+              background: orange;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="box">
+            <div class="item1">
+            <h2>Termos de utilização</h2>
+            
+             <p>Os presentes termos e condições regem a utilização deste Guia Virtual, propriedade do Museu do Vinho de Alcobaça - MVA. Por favor leia os seguintes Termos e Condições cuidadosamente. Ao aceder a este Guia Virtual, pressupõe-se que aceita as condições impostas por estes mesmos Termos de acesso e utilização.</p>
+
+            <h3>Conteúdo da aplicação/ propriedade intelectual</h3>
+            <p>Entende-se por conteúdo do Guia Virtaul toda a informação disponível para o utilizador, nomeadamente texto, imagens, vídeos, webdesign, e software. Todo este conteúdo advém do museu e é protegido por direitos de autor ao abrigo das leis portuguesas e da União Europeia, não podendo ser utilizado fora das condições admitidas no uso deste Guia Virtaul, sem consentimento do MVA.
+            Os direitos de propriedade intelectual de todos os conteúdos do MVA, que não visem o fornecimento externo e consequentemente não sejam devidamente identificados, são pertença do Museu, incluindo as informações, as ferramentas, o grafismo, as imagens, gráficos ou textos. O Museu rejeita qualquer responsabilidade pela usurpação e uso indevido dos elementos acima citados, salvo as exceções permitidas por lei, nomeadamente o direito de citação, desde que claramente identificada a sua origem. O conteúdo deste Guia Virtaul não poderá ser copiado, alterado ou distribuído, salvo com autorização expressa do MVA.</p>
+
+            <h3>Interrupção ou suspensão do acesso</h3>
+            <p>O MVA reserva-se o direito de interromper o acesso ao Guia Virtual pelo período que determine como necessário, por quaisquer razões de ordem técnica, administrativa, de força maior ou outras que possam surgir e não estejam diretamente aqui contempladas.
+            Museu não poderá ser responsabilizado por qualquer suspensão ou interrupção de acesso que venha a ocorrer consequentemente de algo que não lhe seja imputável ou que seja imputável a título de mera negligência.</p>
+
+            <h3>Links de acesso a outros websites</h3>
+            <p>No Guia Virtual do MVA poderá encontrar links de acesso a outros websites alheios ao museu, não aceitando este qualquer responsabilidade pelos conteúdos, exatidão, credibilidade e funcionalidades de websites pertencentes a terceiros. A disponibilização de tais links é efetuada de boa fé, não podendo o MVA ser responsabilizado pelas modificações que sejam efetuadas em websites pertencentes a terceiros.</p>
+
+            <h3>Garantias e renúncia de responsabilidade</h3>
+            <p>A forma como utiliza este Guia Virtual e os conteúdos nele presentes é exclusivamente da sua responsabilidade e risco.</p>
+
+            <h3>Contacto</h3> 
+            <p>Para o esclarecimento de qualquer questão relacionada com os presentes termos e condições de utilização do Guia Virtaul do MVA, o utilizador deverá contactar:</p>
+
+            <p>MVA, Rua de Leiria s/n, Olival Fechado, 2460-059 Alcobaça 
+            museus@cm-alcobaca.pt</p>
+                
+            <a href="mainMenu.html" style="text-decoration: none">
+                <input id="btn_tou" type="button" value="Aceito" style="border-radius: 3px; ">
+            </a>
+            </div>
+<!--            <div class="item2">B</div>
+            <div class="item3">C</div>-->
+        </div>
+
+    </body>
+</html>
